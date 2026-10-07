@@ -1,0 +1,146 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    background-image: url(./images/hero.jpg);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header{
+    background-color: #333;
+    color: white;
+    padding: 8px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+
+.header h1{
+    font-size: 24px;
+    margin: 0;
+}
+
+.header .contact{
+    font-size: 14px;
+}
+
+nav{
+    background-color: #222;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    margin: 0;
+}
+
+nav ul li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 3px;
+    background-color: #1a2b4c;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+nav ul li a:hover{
+    color: #a9c4ff;
+}
+
+nav ul li a:hover::after{
+    width: 70%;
+}
+
+.hero{
+    position: relative;
+    height: 500px;
+    color: #dfeee3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 48px;
+    margin: 0;
+}
+
+.h5{
+    border: 2px solid rgba(255,255,255,0.3);
+    background-color: rgba(0,0,0,0.55);
+    border-radius: 20px;
+    padding: 25px 40px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+.hero p{
+    font-size: 20px;
+    margin: 10px 0 20px;
+}
+
+button{
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: #1a2b4c;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    letter-spacing: 0.5px;
+}
+
+button:hover{
+    background-color: #2c4470;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto;
+}
